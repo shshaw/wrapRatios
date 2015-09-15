@@ -1,11 +1,11 @@
 # wrapRatios
-*Micro JS Utility For Responsive Ratios*
+*A Micro JS Utility For Responsive Ratios*
   
 Browsers don't maintain aspect ratios for most elements, including `<iframe>` which is commonly used for embedding videos. 
 
 Enter `wrapRatios`, a Javascript utility for maintaining aspect ratios responsively. No matter the window size, your videos and content will keep their shape.
 
-Works in all browsers, IE9+. 
+Works in all browsers, IE9+. Only 1kb (0.6kb gzipped)!
 
 View the [demo](http://codepen.io/shshaw/full/BNXWOo) or view a [CSS-only demo](http://codepen.io/shshaw/pen/ZGgXLj) if you want to implement the concept manually.
 
@@ -38,9 +38,23 @@ The following styles are inserted into the `<head>` on the first run.
 ```
 
 
+## Usage
+
+Simply add the `data-ratio` attribute to an element and include the [minified script](wrapRatios.min.js), weighing only 1kb (0.6kb gzipped) which includes all the required styles.
+
+`wrapRatios` automatically wraps any elements with a `data-ratio` attribute, but a selector, element or array of elements can be passed as the first parameter, like `wrapRatios('.video')` or `wrapRatios( document.getElementById('video') )`.
+
+The ratio can be formatted with an `x` or `:`, so `16x9` and `1.77:1` are the same. 
+
+Each element's ratio will be determined in the following order:
+
+1. The second argument when called, e.g. `wrapRatios('video','16x9')`.
+2. `data-ratio` attribute value
+3. `width` and `height` attributes
+
 ## Examples
 
-The following iframes are all locked in to a 16x9 ratio:
+These `<iframe>`s will all be locked in to a 16x9 ratio:
 
 ```html
 <iframe data-ratio width="853" height="480" src="https://www.youtube.com/embed/Tbp--r-vO8g" frameborder="0" allowfullscreen></iframe>
@@ -63,17 +77,3 @@ wrapRatios( document.getElementById('myVideo'), '16x9' );
 <span data-ratio="1.85:1">1.85:1</span>
 <span data-ratio="2.35:1">2.35:1</span>
 ```
-
-## Usage
-
-Simply add the `data-ratio` attribute to an element and include the [minified script](wrapRatios.min.js), weighing only 1kb (0.6kb gzipped) which includes all the required styles.
-
-`wrapRatios` automatically wraps any elements with a `data-ratio` attribute, but a selector, element or array of elements can be passed as the first parameter, like `wrapRatios('.video')` or `wrapRatios( document.getElementById('video') )`.
-
-The ratio can be formatted with an `x` or `:`, so `16x9` and `1.77:1` are the same. 
-
-Each element's ratio will be determined in the following order:
-
-1. The second argument when called, e.g. `wrapRatios('video','16x9')`.
-2. `data-ratio` attribute value
-3. `width` and `height` attributes

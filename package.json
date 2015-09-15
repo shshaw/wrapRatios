@@ -1,7 +1,7 @@
 {
   "name": "wrapRatios",
   "version": "1.0.0",
-  "description": "Micro JS Utility For Responsive Ratios",
+  "description": "A Micro JS Utility For Responsive Ratios",
   "main": "wrapRatios.min.js",
   "repository": {
     "type": "git",
