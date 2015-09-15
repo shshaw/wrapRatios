@@ -1,0 +1,23 @@
+{
+  "name": "wrapRatios",
+  "version": "1.0.0",
+  "description": "Micro JS Utility For Responsive Ratios",
+  "main": "wrapRatios.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shshaw/wrapRatios.git"
+  },
+  "keywords": [
+    "css",
+    "responsive",
+    "ratio",
+    "wrapRatios",
+    "wrapRatio"
+  ],
+  "author": "Shaw (https://github.com/shshaw)",
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/shshaw/wrapRatios/issues"
+  },
+  "homepage": "https://github.com/shshaw/wrapRatios"
+}

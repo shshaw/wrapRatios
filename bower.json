@@ -1,0 +1,17 @@
+{
+  "name": "wrapRatios",
+  "main": "wrapRatios.min.js",
+  "homepage": "https://github.com/shshaw/wrapRatios",
+  "authors": [
+    "Shaw <denismassters@gmail.com>"
+  ],
+  "description": "Micro JS Utility For Responsive Ratios",
+  "keywords": [
+    "css",
+    "responsive",
+    "ratio",
+    "wrapRatios",
+    "wrapRatio"
+  ],
+  "ignore": ["/node_modules", "npm-debug.log"]
+}
