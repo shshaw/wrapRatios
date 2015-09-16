@@ -7,7 +7,7 @@ Enter `wrapRatios`, a Javascript utility for maintaining aspect ratios responsiv
 
 Works in all browsers, IE9+. Only 1kb (0.6kb gzipped)!
 
-View the [demo](http://codepen.io/shshaw/full/BNXWOo) or view a [CSS-only demo](http://codepen.io/shshaw/pen/ZGgXLj) if you want to implement the concept manually.
+View the [demo](http://codepen.io/shshaw/full/BNXWOo).
 
 ## How?
 
@@ -29,13 +29,15 @@ Elements are wrapped in a `<div>` container with a `<canvas>` of the proper aspe
 
 Browsers will scale the `<canvas>` without losing the aspect ratio, so the element is set to `position: absolute`, letting it float over the canvas and resize properly.
 
-The following styles are inserted into the `<head>` on the first run.
+The following styles are automatically inserted into the `<head>` on the first run.
 
 ```css
 .wrapRatios { position:relative; }
 .wrapRatios__content { position:absolute; top:0; left:0; width:100%; height:100%; }
 .wrapRatios__sizer { display:block; width:100%; height:auto; visibility:hidden; }
 ```
+
+You can implement this technique manually without Javascript using the [styles and code above](http://codepen.io/shshaw/pen/ZGgXLj).
 
 
 ## Usage
