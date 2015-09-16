@@ -61,7 +61,7 @@
 
       // Create a container div with the proper classes for the responsive styling
       w = d.createElement('div');
-      w.className = c+' '+c+'--dynamic';
+      w.className = c;
 
       //c.style.display = ( getComputedStyle(el).display.indexOf('inline') >= 0 ? 'inline-block' : 'block' );
 

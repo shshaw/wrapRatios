@@ -21,7 +21,7 @@ Elements are wrapped in a `<div>` container with a `<canvas>` of the proper aspe
 **After:**
 
 ```html
-<div class="wrapRatios wrapRatios--dynamic">
+<div class="wrapRatios">
   <canvas class="wrapRatios__sizer" width="853" height="480"></canvas>
   <iframe width="853" height="480" src="https://www.youtube.com/embed/Tbp--r-vO8g" frameborder="0" allowfullscreen="" class=" wrapRatios__content"></iframe>
 </div>
